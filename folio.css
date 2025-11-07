@@ -1,37 +1,50 @@
-body {
+
+ 
+ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ace0d393;
+    background-color: hwb(165 49% 24% / 0.576);
 }
 
 header {
-    background: #064f65;
+    background: #72ceeb;
     color: #ffffff;
-    padding: 20px;
+    padding: 2px;
     text-align: center;
+    text-transform: capitalize;
+    
 }
 
 nav {
-    background: #064f65;
-    color: #ffffff;
-    padding: 10px;
+    background-color: #d8eff5;
+    color: #b5aeae;
+    padding: 1px;
+   
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    
 }
 
 nav ul li {
     display: inline;
-    margin:40px;
+    margin:70px;
+    transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(240, 213, 213, 0.2);
 }
+
 nav ul li a {
-    color: #ffffff;
+    color: #554e4e;
     text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 
 section {
     padding: 20px;
@@ -39,8 +52,22 @@ section {
     background: #ffffff;
     border-radius: 5px;
     box-shadow:10px rgba(47, 46, 46, 0.1);
+     transition: all 0.5s ease-in-out;
 }
 
+ section:hover {
+      background-color: rgb(139, 206, 167);
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ div:hover {
+      background-color: rgb(107, 220, 137);
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      
+ }
+ 
 .project {
     margin-bottom: 20px;
     border:2px 0  #064f65; 
@@ -61,13 +88,16 @@ footer {
     width: 100%;
 }
 .nav{
-    background-color: rgb(249, 6, 6);
-    border-radius: 20px;
+    background-color: rgb(224, 212, 212);
+    border-radius: 5px;
+    border: 2px solid bisque;
+    box-shadow:10px rgba(47, 46, 46, 0.1);
 }
 img{
-    border-radius: 50%;
+    border-radius: 20%;
     justify-content: center;
     border: 20px 1px 1px #1746ed;
+    transform-style: preserve-3d;
 }
 .grid_cont{
     display: grid;
@@ -78,7 +108,7 @@ img{
     border:2px 0  #064f65;
 }
 a:hover{
-    color: rgba(131, 251, 110, 0.862);
+    color: rgba(13, 13, 12, 0.862);
 }
 .acd{
     display: grid;
@@ -132,4 +162,5 @@ h2{
 }
 .rate{
     background-color: #928383;
-}
+    
+} 

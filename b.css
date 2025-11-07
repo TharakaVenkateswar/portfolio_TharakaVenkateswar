@@ -3,9 +3,15 @@
     grid-template-columns:repeat(2,1fr) ;
 
 }
+@keyframes myAnimation{
+    from{background-color: #bc4c4c;}
+    to{background-color: #cfd6d8;}
+}
 .grid_item{
     text-align: center;
     background-color: bisque;
+   
+
 
 }
 .grid_container1{
@@ -30,10 +36,21 @@ li{
     display: inline-block;
     padding:30px;
     height: 5px;
+    background-color: antiquewhite;
 } 
 a{
     text-decoration-line: none;
    color: black;
+}
+button:hover{
+    background-color: rgb(186, 244, 226);
+    text-transform: uppercase;
+    color:rgb(123, 166, 176);
+    text-shadow: #bc4c4c;
+}
+button{
+    justify-content: center;
+    padding: 2px;
 }
 .grid_container2{
     display: grid;
@@ -64,4 +81,10 @@ img{
 }
 #me{
     border-radius:100%;
+}
+body{
+     animation-timing-function: ease-in-out;
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    background-color: black;
 }
